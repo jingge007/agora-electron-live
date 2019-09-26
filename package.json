@@ -2,7 +2,11 @@
   "name": "agora-electron-live",
   "version": "0.1.0",
   "private": true,
+  "main": "main.js",
+  "homepage": ".",
   "dependencies": {
+    "agora-electron-sdk": "2.9.0-hotfix.2",
+    "node-sass": "^4.12.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.2"
@@ -11,7 +15,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "electron ."
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +32,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "electron": "5.0.8"
+  },
+  "agora_electron": {
+    "electron_version": "5.0.8",
+    "prebuilt": true,
+    "platform": "win32",
+    "msvs_version": "2017",
+    "debug": false,
+    "silent": false
   }
 }
